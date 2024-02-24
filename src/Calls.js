@@ -3,7 +3,7 @@ export async function getitems(){
     
  try {
 
-    const answer = await fetch(`${import.meta.env.VITE_API_URL}/guitars?populate=image`)
+    const answer = await fetch(`${import.meta.env.VITE_API_URL}`)
     const result =  await answer.json();
 
     console.log(result);
