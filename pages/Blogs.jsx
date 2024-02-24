@@ -36,6 +36,8 @@ const Blogs = ({setPost}) => {
                 console.log(blog)
          const {attributes, contenido} = blog;
 
+         console.log(blog.attributes)
+
          const image = blog.attributes.image.data.attributes.formats.small.url
 
        

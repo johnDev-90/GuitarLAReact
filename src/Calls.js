@@ -5,7 +5,7 @@ export async function getitems(){
 
     const answer = await fetch(`${import.meta.env.VITE_API_URL}`)
     const result =  await answer.json();
-
+  console.log(import.meta.env.VITE_API_URL)
     console.log(result);
     return result.data
     
@@ -18,7 +18,7 @@ export async function getitems(){
 
 export async function  getBlogs(){
    try {
-      const answer = await fetch(`${import.meta.env.VITE_API_URL}/blogs?populate=image`)
+      const answer = await fetch(`${import.meta.env.VITE_API_URLBLOGS}`)
       const result = await answer.json();
    
       return result.data;
